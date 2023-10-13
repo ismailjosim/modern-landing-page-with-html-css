@@ -25,6 +25,7 @@ li {
 a {
     text-decoration: none;
     color: #fff;
+    pointer-events: all;
 }
 
 /* *** Global styling end *** */
@@ -33,19 +34,29 @@ a {
     height: 100vh;
 }
 
+/* back side code start */
 #back {
     width: 100%;
     height: 100vh;
-    background-color: black;
 }
 
+#back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* top side styling start */
 #top {
+    pointer-events: none;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-
 }
 
 #working-area {
@@ -98,10 +109,14 @@ a {
 #hero-left .elem {
     height: 9vw;
     overflow: hidden;
+    position: relative;
 
 }
 
 #hero-left .elem h1 {
+    position: absolute;
+    top: 100%;
+    left: 0;
     font-family: "kajiro", sans-serif;
     color: #ffffff;
     font-weight: 100;
@@ -109,7 +124,13 @@ a {
     line-height: 0.9;
 }
 
+#hero-left .elem h1:first-child {
+    top: 0;
+}
+
 #hero-left button {
+    pointer-events: all;
+    cursor: pointer;
     padding: 0.8vw 3vw;
     font-size: 3vw;
     font-family: "kajiro", sans-serif;
