@@ -36,7 +36,7 @@ a {
 #back {
     width: 100%;
     height: 100vh;
-    background: #194d9b;
+    background-color: black;
 }
 
 #top {
@@ -45,7 +45,7 @@ a {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: #a0a0a05d;
+
 }
 
 #working-area {
@@ -53,6 +53,7 @@ a {
     margin: 0 auto;
     max-width: 1920px;
     height: 100vh;
+    position: relative;
 }
 
 #nav {
@@ -76,4 +77,26 @@ a {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 1rem;
+}
+
+/* hero section */
+#hero {
+    display: flex;
+
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    width: 100%;
+}
+
+#hero-left {
+    min-width: 50%;
+    background-color: yellow;
+}
+
+#hero-right {
+    min-width: 25%;
+    background-color: #ff00f2;
 }
